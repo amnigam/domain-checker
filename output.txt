@@ -1,55 +1,52 @@
 ﻿============================================
-  WHOIS Lookup: gaickun.com
+  WHOIS Lookup: infosys.com
 ============================================
 
 Local 'whois' not found. Using web API fallback...
 (Install Sysinternals whois: winget install Sysinternals.Whois)
 
-Handle:       2607772122_DOMAIN_COM-VRSN
-Registrar:    GoDaddy.com, LLC
-Created:      2021-04-26T12:11:01Z
-Expires:      2026-04-26T12:11:01Z
-Updated:      2025-03-09T08:51:48Z
-Status:       client delete prohibited, client renew prohibited, client transfer prohibited, client update prohibited
+Handle:       3015991_DOMAIN_COM-VRSN
+Registrar:    CSC Corporate Domains, Inc.
+Created:      1992-07-17T04:00:00Z
+Expires:      2026-10-13T14:52:28Z
+Updated:      2025-10-09T05:08:32Z
+Status:       client transfer prohibited, server delete prohibited, server transfer prohibited, server update prohibited
 
 Nameservers:
-  NS1.DIGITALOCEAN.COM
-  NS2.DIGITALOCEAN.COM
-  NS3.DIGITALOCEAN.COM
+  UDNS1.CSCDNS.NET
+  UDNS2.CSCDNS.UK
 ============================================
-  DNS Record Check: gaickun.com
+  DNS Record Check: infosys.com
 ============================================
 
 --- NS Records ---
-  ns1.digitalocean.com
-  ns3.digitalocean.com
-  ns2.digitalocean.com
-[OK] 3 nameservers found
+  udns1.cscdns.net
+  udns2.cscdns.uk
+[OK] 2 nameservers found
 
---- SPF Record (TXT on gaickun.com) ---
-  v=spf1 include:secureserver.net -all
-[OK] SPF ends with '-all' (hard fail) - good
+--- SPF Record (TXT on infosys.com) ---
+(no SPF record found)
+[X] Missing SPF - this domain can be spoofed by anyone
 
---- DMARC Record (TXT on _dmarc.gaickun.com) ---
-  v=DMARC1; p=none;
-[!] DMARC policy is 'none' - monitoring only, no enforcement
+--- DMARC Record (TXT on _dmarc.infosys.com) ---
+  v=DMARC1; p=reject; sp=reject; aspf=r; rua=mailto:dmarc_Admin@infosys.com;
+[OK] DMARC policy is 'reject' - strongest protection
 
 --- DKIM Record (trying common selectors) ---
-(no DKIM record found with common selectors: default, google, selector1, selector2, k1, dkim, mail, s1, s2)
-[!] DKIM not found - the domain may use a non-standard selector
+  Selector 'default': v=DKIM1; k=rsa;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzXNvaqJq2DJEKMF6/QrVQimUbyM1sIoUOK/WjlggO6Bv7wcQ/7p6xvxBdd+9J2cGntwdUyX876A9dVfJVyW5BLDwZ5Ieor0DevEOEajKPxSvTiZBikcsCHBLYEfWh8DTZLFS8C68jLTo4d4M30yKGxuLm0MgyobzTMWs2id3hKBtlTBhWzRAOKt7xKXrga3rJklVvF8i1SbM3J+FBKxOSifS5LLsWBORb80rMe4VCnvF0vNLqRfBfhvNgI8062OgQnEY8NCsvrcYlQj8OFLZmfmwUg25ris2wFZMfgJw6ciE6esKKxLYeSLP2OkAddDH6QUPJzk5jpiEp1HCyYeeJQIDAQAB
 
 ============================================
   DNS check complete.
 ============================================
 ============================================
-  VirusTotal Reputation: gaickun.com
+  VirusTotal Reputation: infosys.com
 ============================================
 
 --- Analysis Stats ---
 Malicious:  0
 Suspicious: 0
-Harmless:   0
-Undetected: 94
+Harmless:   63
+Undetected: 31
 Total engines scanned: 94
 
 [OK] CLEAN - no engines flagged this domain
@@ -57,90 +54,15 @@ Total engines scanned: 94
 Reputation score: 0
 
 --- Vendor Categories ---
+  BitDefender: computersandsoftware
+  Forcepoint ThreatSeeker: information technology
+  Sophos: information technology
 
 --- Flagged Detections ---
   (no vendors flagged this domain)
 
-Full report: https://www.virustotal.com/gui/domain/gaickun.com
+Full report: https://www.virustotal.com/gui/domain/infosys.com
 
 ============================================
   VirusTotal check complete.
-============================================
-
-============================================
-# Domain Health Report: gaickun.com
-============================================
-
-## Summary
-| Check          | Status        |
-|----------------|---------------|
-| WHOIS          | Clean         |
-| DNS Records    | Warning       |
-| VirusTotal     | Clean         |
-
-## Overall Verdict: SAFE (with minor improvements recommended)
-
-## Details
-
-### WHOIS
-- Registrar: GoDaddy.com, LLC (reputable provider)
-- Domain Age: ~5 years (created April 26, 2021)
-- Expiration: April 26, 2026 (expires in ~1 month - renewal recommended soon)
-- Last Updated: March 9, 2025
-- Status: Client delete/renew/transfer/update prohibited (standard protective locks)
-- Nameservers: DigitalOcean (3 nameservers - ns1/ns2/ns3.digitalocean.com)
-
-Assessment: Well-established domain with proper registration protections. 
-The domain has been active for 5 years, indicating legitimacy. 
-Consider renewing soon as expiration is approaching.
-
-### DNS Records
-
-NS Records: 3 nameservers from DigitalOcean (reputable cloud provider)
-
-SPF Record: Properly configured
-- v=spf1 include:secureserver.net -all
-- Uses GoDaddy/Secureserver email infrastructure
-- Ends with -all (hard fail) - prevents email spoofing
-
-DMARC Record: Needs improvement
-- v=DMARC1; p=none;
-- Policy set to none - monitoring only with no enforcement
-- No reporting URIs configured
-- Recommendation: Upgrade to p=quarantine or p=reject for better protection
-
-DKIM Record: Present
-- s1 selector configured with valid RSA key
-
-Assessment: Good email authentication setup overall. SPF and DKIM are properly 
-implemented. However, DMARC policy should be strengthened from p=none to 
-p=quarantine or p=reject to actively protect against email spoofing.
-
-### VirusTotal
-- Malicious flags: 0
-- Suspicious flags: 0
-- Harmless ratings: 0
-- Undetected: 94 (domain not widely analyzed)
-- Reputation score: 0 (neutral)
-- Total engines scanned: 94
-
-Assessment: Clean reputation. No security vendors have flagged this domain 
-as malicious or suspicious.
-
-### Recommendations
-This domain appears safe and legitimate. Key observations:
-- Long-standing registration history (5 years)
-- Professional DNS infrastructure (DigitalOcean)
-- SPF and DKIM properly configured
-- DMARC needs strengthening (currently monitoring-only)
-- Clean VirusTotal reputation with zero flags
-- Domain expires in ~1 month - renew soon
-
-Action items:
-1. Renew domain registration before April 26, 2026 expiration
-2. Strengthen DMARC policy from p=none to p=quarantine or p=reject
-3. Add DMARC reporting URIs (rua/ruf) to monitor email authentication
-
-No security concerns identified. Domain is safe for business interactions.
-
 ============================================
